@@ -41,6 +41,24 @@
         Und dann ich fing an weiter die Aufgaben abzufotografieren.<br>
     </p>
 
+    <a href="quadrat.html">Zur seite zum Quadrieren</a>
+
+    <input type="number" id="zahl">
+    <button onclick="berechnen()">quadrieren!</button>
+
+    <script>
+        function berechnen() {
+            var eingegebeneZahl = 0;
+            eingegebeneZahl = document.getElementById('zahl').value;
+
+            document.getElementById('zahl').value = quadrieren(eingegebeneZahl);
+        }
+
+        function quadrieren(zahl) {
+            return zahl * zahl;
+        }
+    </script>
+
     <style>
         body {
             background-image: url('./images/Reisen.jpg');
