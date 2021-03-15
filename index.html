@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +7,38 @@
     <title>Homepage</title>
 </head>
 <body>
-    <h1>Homepage</h1><div class="text"></div>
-    <a href="quadrat.html">Zur seite zum Quadrieren</a><br>
-    <a href="Sehnsucht.html">Sehensucht</a><br>
-    <a href="https://ich-bin-polly.netlify.app/">Pollyswebside</a>
+    <h1 id="ueberschrift">Homepage</h1>
+
+    <p class="text">Um eine Zahl zu Quadrieren: <a href="quadrat.html">Zur seite zum Quadrieren</a></p>
+    
+    <p class="text">Zu meinem Gedicht: <a href="Sehnsucht.html">Sehensucht</a></p>
+    
+    <p class="text">Zur Pollyswebsite: <a href="https://ich-bin-polly.netlify.app/">Pollyswebsite</a></p>
 
 
     <style>
+        #ueberschrift{
+            text-align: center;
+            animation: 1s ease;
+        }
+        #ueberschrift:hover{
+            text-decoration: underline;
+        }
         .text {
-        color: white;
-        text-align: center;
-        text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
-    }
+            text-align: center;
+            background-color: darkgray;
+            padding: 10px 0px 10px 0px;
+            margin: 0px 20rem 10px 20rem;
+            border-radius: 10px;
+        } 
+        html {
+            height: 100%;
+        }
+        body{
+            background: #11998e;
+            background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+            background: linear-gradient(to right, #38ef7d, #11998e);
+        }
     </style>
-    
 </body>
 </html>
